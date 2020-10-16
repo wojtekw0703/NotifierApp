@@ -1,4 +1,4 @@
-## NotifierApp :memo:
+## NotifierApp :chart:
 
 ## What is NotifierApp ?
 NotifierApp is a simple script which focuses (by default) on **h3 headers** and checks the changes.
