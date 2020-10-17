@@ -4,7 +4,7 @@ import win10toast
 import time
 
 
-my_bool = True
+endless_working = True
 
 page_to_search = requests.get("http://www.wojciechwydmuch.com/blog.php")
 soup = BeautifulSoup(page_to_search.content, 'html.parser')
@@ -14,7 +14,7 @@ heading_h3 = soup.find_all("h3")
 list_of_h3 = [k.text for k in heading_h3]
 
 
-while my_bool:
+while endless_working:
     page_to_search = requests.get("http://www.wojciechwydmuch.com/blog.php")
     soup = BeautifulSoup(page_to_search.content, 'html.parser')
     heading_h3 = soup.find_all("h3")
